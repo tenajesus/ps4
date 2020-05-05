@@ -8,6 +8,7 @@ height: 100%;
   width: 100%;
   text-align: center;
   color: #000;
+  
 }
 
 .contenidocost {
@@ -33,7 +34,7 @@ height: 100%;
 }
 .intro{
   /*background-image: url("../img/students.jpg");*/
-  min-height: 50%;
+  min-height: 40%;
 }
 
 .header,.intro,.middle,.foot{

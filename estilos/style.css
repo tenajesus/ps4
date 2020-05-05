@@ -20,7 +20,7 @@ height: 100%;
 }
 
 .header{
-  background-image: url("../img/book.jpg");
+  background-image: url("../img/console.jpg");
   min-height: 100%;
 }
 .middle{
@@ -28,12 +28,12 @@ height: 100%;
   min-height: 100%;
 }
 .foot{
-  background-image: url("../img/alumnos-min.JPG");
+  background-image: url("../img/mando.jpg");
   min-height: 100%;
 }
 .intro{
   /*background-image: url("../img/students.jpg");*/
-  min-height: 90%;
+  min-height: 50%;
 }
 
 .header,.intro,.middle,.foot{
@@ -47,7 +47,7 @@ height: 100%;
 }
 
 .contenido span.border {
-  background-color: green;
+  background-color:#0c67bd;
   color: #fff;
   padding: 18px;
   font-size: 25px;
@@ -56,7 +56,7 @@ height: 100%;
   border-radius: 4px;
 }
 .contenidocost span.borderst {
-  background-color: green;
+  background-color: #0c67bd;
   color: #fff;
   padding: 18px;
   font-size: 25px;
@@ -69,7 +69,7 @@ height: 100%;
 	background-color:white;
 	text-align:center;
 	padding:50px 80px;
-	text-align: justify;
+	text-align: center;
   font-family: 'Poiret One', bold;
   font-size: 20px;
   

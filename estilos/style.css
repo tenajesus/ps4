@@ -4,16 +4,18 @@ height: 100%;
 .contenido {
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 40%;
   width: 100%;
   text-align: center;
   color: #000;
+  animation-name: slidein;
+  animation-duration: 2s;
   
 }
 
 .contenidocost {
   position: absolute;
-  left: 0;
+  left: 30px;
   top: 10%;
   width: 95%;
   text-align: center;
@@ -21,15 +23,16 @@ height: 100%;
 }
 
 .header{
-  background-image: url("../img/console.jpg");
+  background-image: url("../img/games.jpg");
   min-height: 100%;
+  /* opacity: 90%; */
 }
 .middle{
-  background-image: url("../img/price.jpg");
+  background-image: url("../img/mando.jpg");
   min-height: 100%;
 }
 .foot{
-  background-image: url("../img/mando.jpg");
+  background-image: url("../img/bata.jpg");
   min-height: 100%;
 }
 .intro{
@@ -37,9 +40,8 @@ height: 100%;
   min-height: 40%;
 }
 
-.header,.intro,.middle,.foot{
+.header,.intro,.middle,.foot,.estandar{
   position: relative;
-  /*opacity: 0.9;*/
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -48,10 +50,11 @@ height: 100%;
 }
 
 .contenido span.border {
-  background-color:#0c67bd;
+  background: linear-gradient(to left,blue,green);
+  
   color: #fff;
   padding: 18px;
-  font-size: 25px;
+  font-size: 30px;
   letter-spacing: 10px;
   font-family: 'Kodchasan', sans-serif;
   border-radius: 4px;
@@ -65,23 +68,23 @@ height: 100%;
 }
 
 .intro{
-	color: #000000;
-	background-color:white;
+	color:gray;
+  background-color:white;
 	text-align:center;
 	padding:50px 80px;
 	text-align: center;
   font-family: 'Poiret One', bold;
-  font-size: 20px;
+  font-size: 17px;
   
 }
 .estandar{
-	
-	background-color:white;
+	/* background: linear-gradient(to right,gray,green); */
 	text-align:center;
 	padding:50px 80px;
 	text-align: justify;
  	font-family: 'Raleway', sans-serif;
- 	font-size: 15px;
+  font-size: 17px;
+  color:gray;
 }
 .triana{
 	color:#ddd;
@@ -99,10 +102,11 @@ height: 100%;
 	padding:50px 60px;
 	text-align: center;
  	font-family: 'Poiret One', cursive;
- 	font-size: 18px;
+ 	font-size: 15px;
 }
 .firma{
-  	font-family: 'Kaushan Script', cursive;
+    font-family: 'Poiret One', cursive;
+    color:rgb(129, 185, 129);
   }
 /*.gmail{
 	color:#e2540a;

@@ -25,7 +25,7 @@ height: 100%;
   min-height: 100%;
 }
 .middle{
-  background-image: url("../img/money.jpg");
+  background-image: url("../img/price.jpg");
   min-height: 100%;
 }
 .foot{
@@ -109,8 +109,8 @@ height: 100%;
 	color:#e2540a;
 }*/
 .fok{
- color:red;
- font-size: 70px; 
+ color:#0c67bd;
+ font-size: 20px; 
 }
 .fok2{
  color:gray;

@@ -1,52 +1,50 @@
 //Archivo de Parametros a Firebase
 // Inicializar Firebase
-var config = {
-	apiKey: "AIzaSyD5IJFrk1heCtkO_GXn93e0M2tZ9RqiKmE",
-	authDomain: "vincertifica.firebaseapp.com",
-	databaseURL: "https://vincertifica.firebaseio.com",
-	projectId: "vincertifica",
-	storageBucket: "vincertifica.appspot.com",
-	messagingSenderId: "840130538075"
-};
+var firebaseConfig = {
+    apiKey: "AIzaSyAqIQKRo0WcWVarAEhndXNbNAhZPA9pnsI",
+    authDomain: "consolas-ea2aa.firebaseapp.com",
+    databaseURL: "https://consolas-ea2aa.firebaseio.com",
+    projectId: "consolas-ea2aa",
+    storageBucket: "consolas-ea2aa.appspot.com",
+    messagingSenderId: "745278205642",
+    appId: "1:745278205642:web:ca046b6c719754fc284e33",
+    measurementId: "G-F7JQVG887M"
+  };
 
-firebase.initializeApp(config);
-
-//Accedere a la API de Firebase
-var dbService = firebase.database();
-// Hacer llamado a ella mediante una Referencia
-var referencia = dbService.ref('paqueteria');
-// Metodo SET (Escribir datos) Metodo UPDATE (Actualizar Datos)
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
+var db = firebase.firestore();
 
 function inhabilitar() {
-	document.getElementById('curp').disabled = true;
 	document.getElementById('name').disabled = true;
-	document.getElementById('cuatri').disabled = true;
-	document.getElementById('grupo').disabled = true;
-	document.getElementById('carrera').disabled = true;
-	document.getElementById('mail').disabled = true;
-	document.getElementById('savebtn').disabled = true;
-	document.getElementById('cancelbtn').disabled = true;
+	document.getElementById('phone').disabled = true;
+	document.getElementById('email').disabled = true;
+	document.getElementById('paquete').disabled = true;
+	document.getElementById('consola').disabled = true;
+	document.getElementById('pay').disabled = true;
+	
 }
 
 function save() {
 	let name = document.getElementById('name').value;
-	let crp = document.getElementById('curp').value;
-	let cuat = document.getElementById('cuatri').value;
-	let grp = document.getElementById('grupo').value;
-	let career = document.getElementById('carrera').value;
-	let corr = document.getElementById('mail').value;
+	let tel = document.getElementById('phone').value;
+	let correo = document.getElementById('email').value;
+	let service = document.getElementById('paquete').value;
+	let cons = document.getElementById('consola').value;
+	let metodopag = document.getElementById('pay').value;
 
 	if (name) {
-		referencia.push({
-			carrera: career,
-			cuatrimestre: cuat,
-			curp: crp,
-			email: corr,
-			fechareg: new Date().getTime(),
-			grupo: grp,
-			nombre: name
+		db.collection("servicios").add({
+			Telefono: tel,
+			consola: cons,
+			email: correo,
+			nombre: name,
+			// fechareg: new Date().getTime(),
+			paquete: service,
+			paymethod: metodopag
 		})
-			.then(() => {
+		 .then(() => {
 				const toast = Swal.mixin({
 					toast: true,
 					position: 'top-end',

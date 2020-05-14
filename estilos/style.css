@@ -24,7 +24,7 @@ height: 100%;
 
 .header{
   background-image: url("../img/games.jpg");
-  min-height: 100%;
+  min-height: 95%;
   /* opacity: 90%; */
 }
 .middle{
@@ -37,7 +37,7 @@ height: 100%;
 }
 .intro{
   /*background-image: url("../img/students.jpg");*/
-  min-height: 40%;
+  min-height: auto;
 }
 
 .header,.intro,.middle,.foot,.estandar{

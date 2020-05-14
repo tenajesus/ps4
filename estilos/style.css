@@ -28,8 +28,8 @@ height: 100%;
   /* opacity: 90%; */
 }
 .middle{
-  background-image: url("../img/mando.jpg");
-  min-height: 100%;
+  background-image: url("../img/gamer.jpg");
+  min-height: 120%;
 }
 .foot{
   background-image: url("../img/bata.jpg");
@@ -62,8 +62,8 @@ height: 100%;
 .contenidocost span.borderst {
   color: #fff;
   padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
+  font-size: 30px;
+  letter-spacing:40px;
   font-family: 'Poiret One', bold;
 }
 

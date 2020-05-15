@@ -23,12 +23,12 @@ height: 100%;
 }
 
 .header{
-  background-image: url("../img/games.jpg");
+  background-image: url("../img/games.webp");
   min-height: 95%;
   /* opacity: 90%; */
 }
 .middle{
-  background-image: url("../img/gamer.jpg");
+  background-image: url("../img/gamer.webp");
   min-height: 120%;
 }
 .foot{
@@ -36,7 +36,6 @@ height: 100%;
   min-height: 100%;
 }
 .intro{
-  /*background-image: url("../img/students.jpg");*/
   min-height: auto;
 }
 
@@ -49,20 +48,19 @@ height: 100%;
 }
 
 .contenido span.border {
-  background: linear-gradient(to left,blue,green);
+  /* background: linear-gradient(to left,blue,green); */
   color: #fff;
   padding: 18px;
-  font-size: 30px;
-  letter-spacing: 10px;
+  font-size: 20px;
+  letter-spacing: 5px;
   font-family: 'Kodchasan', sans-serif;
   border-radius: 4px;
-  text-align: right; 
 }
 .contenidocost span.borderst {
   color: #fff;
   padding: 18px;
   font-size: 30px;
-  letter-spacing:40px;
+  letter-spacing:20px;
   font-family: 'Poiret One', bold;
 }
 
@@ -77,7 +75,7 @@ height: 100%;
   
 }
 .estandar{
-	/* background: linear-gradient(to right,gray,green); */
+
 	text-align:center;
 	padding:50px 80px;
 	text-align: justify;

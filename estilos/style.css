@@ -46,18 +46,17 @@ height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 .contenido span.border {
   background: linear-gradient(to left,blue,green);
-  
   color: #fff;
   padding: 18px;
   font-size: 30px;
   letter-spacing: 10px;
   font-family: 'Kodchasan', sans-serif;
   border-radius: 4px;
+  text-align: right; 
 }
 .contenidocost span.borderst {
   color: #fff;

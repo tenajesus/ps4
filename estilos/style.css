@@ -15,9 +15,9 @@ height: 100%;
 
 .contenidocost {
   position: absolute;
-  left: 30px;
-  top: 10%;
-  width: 95%;
+  left: 20px;
+  top: 30px;
+  width: 90%;
   text-align: center;
   color: #000;
 }
@@ -48,13 +48,13 @@ height: 100%;
 }
 
 .contenido span.border {
-  /* background: linear-gradient(to left,blue,green); */
+  /* background:linear-gradient(to left,rgb(59, 59, 59),blue); */
   color: #fff;
   padding: 18px;
-  font-size: 20px;
+  font-size: 30px;
   letter-spacing: 5px;
   font-family: 'Kodchasan', sans-serif;
-  border-radius: 4px;
+  border-radius: 20px;
 }
 .contenidocost span.borderst {
   color: #fff;
